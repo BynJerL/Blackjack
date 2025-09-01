@@ -46,6 +46,7 @@ def playerTurn():
 def dealerTurn():
     if sum(dealerDeck) < 17:
         dealerDeck.append(cards.pop())
+        dealerTurn()
     else:
         return
 
